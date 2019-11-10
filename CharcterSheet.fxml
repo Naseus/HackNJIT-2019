@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="800.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" styleClass="anchor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Pane layoutX="25.0" layoutY="146.0" stylesheets="@application.css">
+         <children>
+            <Label fx:id="str" prefHeight="60.0" prefWidth="60.0" styleClass="stat" />
+            <Label fx:id="dex" layoutY="70.0" prefHeight="60.0" prefWidth="58.0" styleClass="stat" />
+            <Label fx:id="con" layoutY="140.0" prefHeight="60.0" prefWidth="58.0" styleClass="stat" />
+            <Label fx:id="inte" layoutY="210.0" prefHeight="60.0" prefWidth="58.0" styleClass="stat" />
+            <Label fx:id="wis" layoutY="280.0" prefHeight="60.0" prefWidth="58.0" styleClass="stat" />
+            <Label fx:id="car" layoutY="350.0" prefHeight="60.0" prefWidth="58.0" styleClass="stat" />
+            <Label fx:id="strMod" layoutX="26.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="statMod" />
+            <Label fx:id="dexMod" layoutX="26.0" layoutY="115.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="statMod" />
+            <Label fx:id="conMod" layoutX="26.0" layoutY="185.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="statMod" />
+            <Label fx:id="inteMod" layoutX="26.0" layoutY="255.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="statMod" />
+            <Label fx:id="wisMod" layoutX="26.0" layoutY="325.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="statMod" />
+            <Label fx:id="carMod" layoutX="26.0" layoutY="395.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="statMod" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="91.0" prefWidth="578.0" styleClass="pane" stylesheets="@application.css">
+         <children>
+            <Label fx:id="name" layoutX="14.0" layoutY="40.0" prefHeight="51.0" prefWidth="155.0" styleClass="topLable" text="Label" wrapText="true" />
+            <Label fx:id="classAndL" layoutX="13.0" layoutY="10.0" prefHeight="31.0" prefWidth="313.0" styleClass="topLable" text="Label" />
+            <Label layoutX="450.0" layoutY="10.0" onMouseClicked="#initialize" prefHeight="31.0" prefWidth="114.0" styleClass="topLable" text="Try Again?" />
+            <Label fx:id="alignment" layoutX="328.0" layoutY="50.0" prefHeight="31.0" prefWidth="114.0" styleClass="topLable" text="Label" />
+            <Label fx:id="race" layoutX="171.0" layoutY="50.0" prefHeight="31.0" prefWidth="155.0" styleClass="topLable" text="Label" />
+            <Label fx:id="backG" layoutX="328.0" layoutY="10.0" prefHeight="31.0" prefWidth="114.0" styleClass="topLable" text="Label" />
+            <Label layoutX="450.0" layoutY="50.0" prefHeight="31.0" prefWidth="114.0" styleClass="topLable" />
+            <Label layoutX="47.0" layoutY="83.0" styleClass="fieldLable" text="CharcterName" />
+            <Label layoutX="26.0" layoutY="2.0" styleClass="fieldLable" text="Name and Level" />
+            <Label layoutX="287.0" layoutY="72.0" prefHeight="17.0" prefWidth="39.0" styleClass="fieldLable" text="Race" />
+            <Label layoutX="394.0" layoutY="72.0" styleClass="fieldLable" text="Alignment" />
+            <Label layoutX="520.0" layoutY="72.0" styleClass="fieldLable" text="Experince" />
+            <Label layoutX="506.0" layoutY="35.0" styleClass="fieldLable" text="Player Name" />
+            <Label layoutX="387.0" layoutY="35.0" styleClass="fieldLable" text="Background" />
+         </children>
+      </Pane>
+      <Pane layoutX="89.0" layoutY="182.0" prefHeight="102.0" prefWidth="126.0" styleClass="pane">
+         <children>
+            <Circle fx:id="s0" fill="#1f93ff06" layoutX="10.0" layoutY="10.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="s1" fill="#1f93ff06" layoutX="10.0" layoutY="25.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="s2" fill="#1f93ff06" layoutX="10.0" layoutY="40.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="s3" fill="#1f93ff06" layoutX="10.0" layoutY="55.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="s4" fill="#1f93ff06" layoutX="10.0" layoutY="70.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="s5" fill="#1f93ff06" layoutX="10.0" layoutY="85.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="26.0" prefHeight="21.0" prefWidth="100.0" text="Strength">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="15.0" prefHeight="21.0" prefWidth="100.0" text="Dexterity">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="30.0" prefHeight="21.0" prefWidth="100.0" text="Constitution">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="45.0" prefHeight="21.0" prefWidth="100.0" text="Intelligence">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="60.0" prefHeight="21.0" prefWidth="100.0" text="Wisdom">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="75.0" prefHeight="21.0" prefWidth="100.0" text="Charisma">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="89.0" layoutY="289.0" prefHeight="290.0" prefWidth="126.0" styleClass="pane">
+         <children>
+            <Circle fx:id="p0" fill="#1f93ff06" layoutX="10.0" layoutY="10.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p1" fill="#1f93ff06" layoutX="10.0" layoutY="25.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p2" fill="#1f93ff06" layoutX="10.0" layoutY="40.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p3" fill="#1f93ff06" layoutX="10.0" layoutY="55.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p4" fill="#1f93ff06" layoutX="10.0" layoutY="70.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p5" fill="#1f93ff06" layoutX="10.0" layoutY="86.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p6" fill="#1f93ff06" layoutX="10.0" layoutY="100.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p7" fill="#1f93ff06" layoutX="10.0" layoutY="115.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p8" fill="#1f93ff06" layoutX="10.0" layoutY="130.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p9" fill="#1f93ff06" layoutX="10.0" layoutY="145.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p10" fill="#1f93ff06" layoutX="10.0" layoutY="160.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p11" fill="#1f93ff06" layoutX="10.0" layoutY="175.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p12" fill="#1f93ff06" layoutX="10.0" layoutY="190.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p13" fill="#1f93ff06" layoutX="10.0" layoutY="205.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p14" fill="#1f93ff06" layoutX="10.0" layoutY="220.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p15" fill="#1f93ff06" layoutX="10.0" layoutY="235.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p16" fill="#1f93ff06" layoutX="10.0" layoutY="250.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p17" fill="#1f93ff06" layoutX="10.0" layoutY="265.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="25.0" layoutY="1.0" prefHeight="21.0" prefWidth="100.0" text="Acrobatics (Dex)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="15.0" prefHeight="21.0" prefWidth="100.0" text="Animal Handling (Wis)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="30.0" prefHeight="21.0" prefWidth="100.0" text="Arcana (Int)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="45.0" prefHeight="21.0" prefWidth="100.0" text="Athletics (Str)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="60.0" prefHeight="21.0" prefWidth="100.0" text="Deception (Cha)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="76.0" prefHeight="21.0" prefWidth="100.0" text="History (Int)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="90.0" prefHeight="21.0" prefWidth="100.0" text="Insight (Wis)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="105.0" prefHeight="21.0" prefWidth="100.0" text="Intimidation (Cha)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="120.0" prefHeight="21.0" prefWidth="100.0" text="Investigation (Int)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="135.0" prefHeight="21.0" prefWidth="100.0" text="Medicine (Wis)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="150.0" prefHeight="21.0" prefWidth="100.0" text="Nature (Int)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="165.0" prefHeight="21.0" prefWidth="100.0" text="Perception (Wis)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="180.0" prefHeight="21.0" prefWidth="100.0" text="Performance (Cha)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="195.0" prefHeight="21.0" prefWidth="100.0" text="Persuasion (Cha)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="210.0" prefHeight="21.0" prefWidth="100.0" text="Religion (Int)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="225.0" prefHeight="21.0" prefWidth="100.0" text="Sleight of Hand (Dex)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="240.0" prefHeight="21.0" prefWidth="100.0" text="Stealth (Dex)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="255.0" prefHeight="21.0" prefWidth="100.0" text="Survival (Wis)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="278.0" styleClass="fieldLable" text="Proficiencies " />
+         </children></Pane>
+      <Pane layoutX="29.0" layoutY="586.0" prefHeight="200.0" prefWidth="189.0" styleClass="pane">
+         <children>
+            <Label fx:id="otherProfsAndLangs" layoutX="10.0" layoutY="14.0" prefHeight="171.0" prefWidth="170.0" styleClass="textLable" />
+            <Label layoutX="30.0" layoutY="185.0" styleClass="fieldLable" text="Other Proficiencies " />
+         </children>
+      </Pane>
+      <Pane layoutX="221.0" layoutY="112.0" prefHeight="274.0" prefWidth="203.0" styleClass="pane">
+         <children>
+            <Label fx:id="armorClass" layoutX="14.0" layoutY="10.0" prefHeight="42.0" prefWidth="46.0" styleClass="BigNums" />
+            <Label fx:id="inititive" layoutX="71.0" layoutY="10.0" prefHeight="42.0" prefWidth="46.0" styleClass="BigNums" />
+            <Label fx:id="speed" layoutX="134.0" layoutY="10.0" prefHeight="42.0" prefWidth="46.0" styleClass="BigNums" />
+            <Pane layoutX="7.0" layoutY="63.0" prefHeight="70.0" prefWidth="189.0" styleClass="pane">
+               <children>
+                  <Label fx:id="health" layoutX="14.0" layoutY="4.0" prefHeight="21.0" prefWidth="162.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="7.0" layoutY="137.0" prefHeight="70.0" prefWidth="189.0" styleClass="pane">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="146.0" text="Temporary Hit Points:">
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <Pane layoutX="110.0" layoutY="215.0" prefHeight="50.0" prefWidth="80.0" styleClass="stat">
+               <children>
+                  <Label layoutX="1.0" layoutY="-2.0" prefHeight="21.0" prefWidth="35.0" text="Sucsesses">
+                     <font>
+                        <Font size="7.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="2.0" layoutY="19.0" prefHeight="21.0" prefWidth="35.0" text="Failure">
+                     <font>
+                        <Font size="7.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#1f93ff06" layoutX="40.0" layoutY="10.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#1f93ff06" layoutX="40.0" layoutY="30.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#1f93ff06" layoutX="60.0" layoutY="10.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#1f93ff06" layoutX="50.0" layoutY="10.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#1f93ff06" layoutX="50.0" layoutY="30.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#1f93ff06" layoutX="60.0" layoutY="30.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="215.0" prefHeight="50.0" prefWidth="80.0" styleClass="stat">
+               <children>
+                  <Label fx:id="hitDice" layoutX="1.0" layoutY="-2.0" prefHeight="21.0" prefWidth="77.0" text="Lable">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="10.0" layoutY="44.0" styleClass="fieldLable" text="Armor Class" />
+            <Label layoutX="74.0" layoutY="44.0" styleClass="fieldLable" text="Initiative" />
+            <Label layoutX="142.0" layoutY="44.0" styleClass="fieldLable" text="Speed" />
+         </children></Pane>
+      <Pane layoutX="221.0" layoutY="394.0" prefHeight="185.0" prefWidth="203.0" styleClass="pane">
+         <children>
+            <Label fx:id="weapon1" layoutX="10.0" layoutY="15.0" prefHeight="23.0" prefWidth="189.0" styleClass="topLable" />
+            <Label fx:id="weapon2" layoutX="10.0" layoutY="40.0" prefHeight="23.0" prefWidth="189.0" styleClass="topLable" />
+            <Label fx:id="weapon3" layoutX="10.0" layoutY="65.0" prefHeight="23.0" prefWidth="189.0" styleClass="topLable" />
+            <Label layoutX="70.0" layoutY="171.0" styleClass="fieldLable" text="Weapons" />
+         </children>
+      </Pane>
+      <Pane layoutX="221.0" layoutY="586.0" prefHeight="200.0" prefWidth="203.0" styleClass="pane">
+         <children>
+            <Label fx:id="equipmentList" layoutX="63.0" layoutY="8.0" prefHeight="185.0" prefWidth="126.0" styleClass="textLable" />
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="35.0" styleClass="money" />
+            <Label layoutX="10.0" layoutY="90.0" prefHeight="31.0" prefWidth="35.0" styleClass="money" />
+            <Label fx:id="goldPeices" layoutX="10.0" layoutY="50.0" prefHeight="31.0" prefWidth="35.0" styleClass="money" />
+            <Label layoutX="10.0" layoutY="130.0" prefHeight="31.0" prefWidth="35.0" styleClass="money" />
+            <Label layoutX="65.0" layoutY="185.0" styleClass="fieldLable" text="Equipment" />
+         </children>
+      </Pane>
+      <Pane layoutX="430.0" layoutY="112.0" prefHeight="260.0" prefWidth="162.0" styleClass="pane">
+         <children>
+            <Label layoutX="15.0" layoutY="2.0" prefHeight="60.0" prefWidth="139.0" styleClass="stat" text="Personality Traits:" />
+            <Label layoutX="15.0" layoutY="130.0" prefHeight="60.0" prefWidth="139.0" styleClass="stat" text="Bonds:" />
+            <Label layoutX="15.0" layoutY="65.0" prefHeight="60.0" prefWidth="139.0" styleClass="stat" text="Ideals:" />
+            <Label layoutX="15.0" layoutY="195.0" prefHeight="60.0" prefWidth="139.0" styleClass="stat" text="Flaws:" />
+         </children></Pane>
+      <Pane layoutX="430.0" layoutY="387.0" prefHeight="398.0" prefWidth="162.0" styleClass="pane">
+         <children>
+            <Label fx:id="traits" layoutX="8.0" prefHeight="371.0" prefWidth="146.0" styleClass="textLable">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label layoutX="25.0" layoutY="383.0" styleClass="fieldLable" text="Features &amp; Traits" />
+         </children>
+      </Pane>
+      <Label layoutX="135.0" layoutY="132.0" prefHeight="42.0" prefWidth="77.0" text="Proficency Bonus" wrapText="true" />
+      <Label fx:id="profBonus" layoutX="89.0" layoutY="132.0" prefHeight="42.0" prefWidth="46.0" styleClass="BigNums" />
+   </children>
+</AnchorPane>

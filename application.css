@@ -1,0 +1,54 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.pane {
+	-fx-border-color: "black";
+
+}
+
+.stat {
+		-fx-border-color: "black";
+		-fx-border-radius:3.0px ;
+		-fx-alignment:center;
+		
+}
+.statMod {
+		-fx-background-color:"white";
+		-fx-border-color: "black";
+		-fx-border-radius:10.0px ;
+}
+
+.topLable {
+	-fx-border-color:black;
+	-fx-font-size:15.0;
+	
+}
+.textLable {
+	-fx-alignment:top-left;
+}
+.money {
+	-fx-border-color: "black";
+	-fx-border-radius:5.0px ;
+	-fx-padding: 10.0%;
+}
+
+.BigNums{
+	-fx-border-color: "black";
+	-fx-border-radius:5.0px ;
+	-fx-font-size: 20; 
+	-fx-alignment:center;
+}
+
+.stat {
+		-fx-border-color: "black";
+		-fx-border-radius:3.0px;
+		-fx-alignment:top-left;
+}
+.fieldLable {
+		-fx-background-color:"white";
+		-fx-border-color: "black";
+		-fx-border-radius:1.0px;
+		-fx-font-size: 10;
+}
+.anchor {
+	-fx-background-color: "white";
+}
